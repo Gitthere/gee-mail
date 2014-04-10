@@ -16,12 +16,30 @@ img {
 	height: 60px;
 }
 
+
 #inbox {
 	font: Verdana;
 	font-size: 20px;
 	width: 10%;
 	float: left;
 }
+
+#inboxCounter {
+	font: Verdana;
+	font-size: 20px;
+	width: 30%;
+	float: left;
+	counter-increment: Counter;
+}
+
+#inboxCounter:after {
+	content: counter(Counter);
+}
+
+#inboxCounter: nth-child() {
+	counter-reset: (Counter);
+}
+
 
 .second_row {
 	background-color: #B9D7D9;
